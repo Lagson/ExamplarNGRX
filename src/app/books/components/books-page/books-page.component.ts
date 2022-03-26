@@ -19,7 +19,7 @@ import { BooksPageActions } from "../../actions";
 })
 export class BooksPageComponent implements OnInit {
   books$: Observable<BookModel[]>;
-  currentBook$: Observable<BookModel | null>;
+  currentBook$: Observable<BookModel | null | undefined>;
   total$: Observable<number>;
 
   constructor(private store: Store<State> ) 
